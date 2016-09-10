@@ -26,32 +26,46 @@ public class Login {
 
     public Login(JFrame frame) {
 
+        DBOperations dbOperations = new DBOperations();
+        if(!dbOperations.checkValueExists("userAccount", "admin")) {
+            dbOperations.addUserAccount("admin", "1234", "1", null);
+        }
+
         //点击登录按钮从数据库中验证并判断权限
         bt_login.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                //如果为管理员
-                JFrame adminFrame = new JFrame("AdministratorUI");
-                adminFrame.setContentPane(new AdministratorUI().jp_admin);
-                adminFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                adminFrame.pack();
-                adminFrame.setResizable(false);
-                adminFrame.setSize(dimension.width, dimension.height);
-                adminFrame.setVisible(true);
-                frame.dispose();
-                System.out.println("Admin user login.");
+                //密码正确
+                if(dbOperations.checkAccount(jl_userName.getText(), jl_password.getText())) {
+                    //如果为管理员
+                    if(dbOperations.checkPower(jl_userName.getText(), jl_password.getText())) {
+                        JFrame adminFrame = new JFrame("AdministratorUI");
+                        adminFrame.setContentPane(new AdministratorUI().jp_admin);
+                        adminFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                        adminFrame.pack();
+                        adminFrame.setResizable(false);
+                        adminFrame.setSize(dimension.width, dimension.height);
+                        adminFrame.setVisible(true);
+                        frame.dispose();
+                        System.out.println("Admin user login.");
+                    } else {
+                        //如果为普通用户
+                        JFrame userFrame = new JFrame("UserUI");
+                        userFrame.setContentPane(new UserUI().jp_user);
+                        userFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                        userFrame.pack();
+                        userFrame.setResizable(false);
+                        userFrame.setSize(dimension.width, dimension.height);
+                        userFrame.setVisible(true);
+                        frame.dispose();
+                        System.out.println("Normal user login");
+                    }
 
-                //如果为普通用户
-                JFrame userFrame = new JFrame("UserUI");
-                userFrame.setContentPane(new UserUI().jp_user);
-                userFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                userFrame.pack();
-                userFrame.setResizable(false);
-                userFrame.setSize(dimension.width, dimension.height);
-                userFrame.setVisible(true);
-                frame.dispose();
-                System.out.println("Normal user login");
+                } else {    //密码错误
+//                    new JDialog(new )
+                }
+
             }
         });
 

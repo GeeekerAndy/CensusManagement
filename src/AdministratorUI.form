@@ -25,52 +25,52 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="a58" class="javax.swing.JButton" binding="button1" default-binding="true">
+          <component id="a58" class="javax.swing.JButton" binding="添加户籍Button" default-binding="true">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Button"/>
+              <text value="添加户籍"/>
             </properties>
           </component>
-          <component id="1e32e" class="javax.swing.JButton" binding="button2" default-binding="true">
+          <component id="1e32e" class="javax.swing.JButton" binding="删除户籍Button" default-binding="true">
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Button"/>
+              <text value="删除户籍"/>
             </properties>
           </component>
-          <component id="60236" class="javax.swing.JButton" binding="button3" default-binding="true">
+          <component id="60236" class="javax.swing.JButton" binding="更新户籍Button" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Button"/>
+              <text value="更新户籍"/>
             </properties>
           </component>
-          <component id="b626e" class="javax.swing.JButton" binding="button4" default-binding="true">
+          <component id="b626e" class="javax.swing.JButton" binding="户籍查询Button" default-binding="true">
             <constraints>
               <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Button"/>
+              <text value="户籍查询"/>
             </properties>
           </component>
-          <component id="593b8" class="javax.swing.JButton" binding="button5" default-binding="true">
+          <component id="593b8" class="javax.swing.JButton" binding="用户管理Button" default-binding="true">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Button"/>
+              <text value="用户管理"/>
             </properties>
           </component>
-          <component id="d5ff" class="javax.swing.JButton" binding="button6" default-binding="true">
+          <component id="d5ff" class="javax.swing.JButton" binding="迁入迁出Button" default-binding="true">
             <constraints>
               <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Button"/>
+              <text value="迁入迁出"/>
             </properties>
           </component>
         </children>

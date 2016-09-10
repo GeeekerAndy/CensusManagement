@@ -5,10 +5,10 @@ import javax.swing.*;
  */
 public class AdministratorUI {
     public JPanel jp_admin;
-    private JButton button1;
-    private JButton button2;
-    private JButton button3;
-    private JButton button4;
-    private JButton button5;
-    private JButton button6;
+    private JButton 添加户籍Button;
+    private JButton 删除户籍Button;
+    private JButton 更新户籍Button;
+    private JButton 户籍查询Button;
+    private JButton 用户管理Button;
+    private JButton 迁入迁出Button;
 }
