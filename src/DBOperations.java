@@ -93,7 +93,7 @@ public class DBOperations {
         try {
             this.connectDatabase();
             if(tableName.equals("userAccount")) {
-                String sql = "SELECT * FROM " + tableName + " WHERE userName = " + "'" + value + "';";
+                String sql = "SELECT * FROM " + tableName + " WHERE userName = '" + value + "';";
                 Statement statement = this.connection.createStatement();
                 ResultSet resultSet = statement.executeQuery(sql);
                 if(resultSet.absolute(1)) {
@@ -194,11 +194,9 @@ public class DBOperations {
         try {
             this.connectDatabase();
             Statement statement = this.connection.createStatement();
-            String sql = "INSERT INTO userAccount (userName, userPassword, userPower, IDNumber) VALUES (" +
-                    "'" + userName + "'" + "," +
-                    "'" + userPassword + "'" + "," +
-                    userPower + "," +
-                    "'" + IDNumber + "'" + ");";
+            String sql = "INSERT INTO userAccount (userName, userPassword, userPower, IDNumber) VALUES ('" +
+                    userName + "','" + userPassword + "'," +
+                    userPower + ",'" + IDNumber + "');";
             statement.execute(sql);
             System.out.println("Add a user account.");
         } catch (SQLException e) {
@@ -209,11 +207,35 @@ public class DBOperations {
 
     //检查用户名密码
     public boolean checkAccount(String userName, String userPassword) {
+        try {
+            this.connectDatabase();
+            Statement statement = connection.createStatement();
+            String sql = "SELECT * FROM userAccount WHERE userName = '" + userName +"' && userPassword = '" + userPassword + "';";
+            ResultSet resultSet = statement.executeQuery(sql);
+            if(resultSet.absolute(1)) {
+                this.disconnectionDatabase();
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return false;
     }
 
     //判断权限
     public boolean checkPower(String userName, String userPassword) {
+        try {
+            this.connectDatabase();
+            String sql = "SELECT * FROM userAccount WHERE userName = '" + userName + "' && userPassword = '" + userPassword + "' && userPower = '1';";
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(sql);
+            if(resultSet.absolute(1)) {
+                this.disconnectionDatabase();
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return false;
     }
     //添加户籍
