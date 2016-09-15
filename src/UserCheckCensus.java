@@ -1,17 +1,24 @@
 import javax.swing.*;
 
-import static java.awt.SystemColor.text;
-
 /**
  * Created by andy on 9/10/16.
  */
 public class UserCheckCensus {
     public JPanel jp_userCheckCensus;
-    public JLabel jl_userCensusAddress;
+    public JLabel lb_CensusAddress;
+    private JLabel lb_censusID;
+    private JLabel lb_hostName;
+    private JLabel lb_censusType;
+    private JLabel lb_hostOrRelation;
 
-    public UserCheckCensus() {
-        StringBuilder stringBuilder = new StringBuilder(256);
-        stringBuilder.append("<html>住址：山东省济南市历下区舜华路街道<br>舜华路1500号山东大学齐鲁软件园</html>");
-        jl_userCensusAddress.setText(stringBuilder.toString());
+    public UserCheckCensus(String userName) {
+        DBOperations dbOperations = new DBOperations();
+        String[] censusInfo = dbOperations.searchCensusByUserName(userName);
+        lb_censusID.setText(censusInfo[0]);
+        lb_hostName.setText(censusInfo[1]);
+        lb_censusType.setText(censusInfo[2]);
+        lb_hostOrRelation.setText(censusInfo[3]);
+        lb_CensusAddress.setText(censusInfo[4]);
+
     }
 }

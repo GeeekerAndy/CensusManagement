@@ -80,13 +80,13 @@
               <text value="用户管理"/>
             </properties>
           </component>
-          <component id="d5ff" class="javax.swing.JButton" binding="bt_quit">
+          <component id="d5ff" class="javax.swing.JButton" binding="bt_accountManagement">
             <constraints>
               <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <font size="28"/>
-              <text value="退出系统"/>
+              <text value="帐号管理"/>
             </properties>
           </component>
         </children>

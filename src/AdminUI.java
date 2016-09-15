@@ -13,7 +13,7 @@ public class AdminUI {
     private JButton bt_updateCensus;
     private JButton bt_searchCensus;
     private JButton bt_manageCensus;
-    private JButton bt_quit;
+    private JButton bt_accountManagement;
     private JLabel jl_title;
 
     public Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
@@ -92,11 +92,17 @@ public class AdminUI {
                 frame.setVisible(true);
             }
         });
-        bt_quit.addActionListener(new ActionListener() {
+        bt_accountManagement.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("Programme quits now.");
-                System.exit(0);
+                JFrame frame = new JFrame("AdminAccountManagement");
+                frame.setContentPane(new AdminAccountManagement().jp_addAccount);
+                frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                frame.pack();
+                frame.setSize(600, 400);
+                frame.setLocation((dimension.width - frame.getWidth())/2, (dimension.height - frame.getHeight())/2);
+                frame.setResizable(false);
+                frame.setVisible(true);
             }
         });
     }

@@ -52,7 +52,7 @@
                   <text value="姓名："/>
                 </properties>
               </component>
-              <component id="68cbd" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+              <component id="68cbd" class="javax.swing.JTextField" binding="tf_name">
                 <constraints>
                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -134,7 +134,7 @@
                   <text value="住址："/>
                 </properties>
               </component>
-              <component id="9ffda" class="javax.swing.JTextField" binding="textField3" default-binding="true">
+              <component id="9ffda" class="javax.swing.JTextField" binding="tf_censusID">
                 <constraints>
                   <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -144,7 +144,7 @@
                   <font size="18"/>
                 </properties>
               </component>
-              <component id="695" class="javax.swing.JTextField" binding="textField4" default-binding="true">
+              <component id="695" class="javax.swing.JTextField" binding="tf_hostOrRelation">
                 <constraints>
                   <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -154,15 +154,7 @@
                   <font size="18"/>
                 </properties>
               </component>
-              <component id="915d1" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
-                <constraints>
-                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <font size="18"/>
-                </properties>
-              </component>
-              <component id="5f91" class="javax.swing.JTextField" binding="textField5" default-binding="true">
+              <component id="5f91" class="javax.swing.JTextField" binding="tf_formerName">
                 <constraints>
                   <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -172,7 +164,7 @@
                   <font size="18"/>
                 </properties>
               </component>
-              <component id="decdd" class="javax.swing.JTextField" binding="textField6" default-binding="true">
+              <component id="decdd" class="javax.swing.JTextField" binding="tf_birthplace">
                 <constraints>
                   <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -182,7 +174,7 @@
                   <font size="18"/>
                 </properties>
               </component>
-              <component id="59a16" class="javax.swing.JTextField" binding="textField7" default-binding="true">
+              <component id="59a16" class="javax.swing.JTextField" binding="tf_nationality">
                 <constraints>
                   <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -192,7 +184,7 @@
                   <font size="18"/>
                 </properties>
               </component>
-              <component id="a84e4" class="javax.swing.JTextField" binding="textField8" default-binding="true">
+              <component id="a84e4" class="javax.swing.JTextField" binding="tf_birthday">
                 <constraints>
                   <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -202,13 +194,24 @@
                   <font size="18"/>
                 </properties>
               </component>
-              <component id="1a295" class="javax.swing.JTextField" binding="textField9" default-binding="true">
+              <component id="1a295" class="javax.swing.JTextField" binding="tf_address">
                 <constraints>
                   <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="18"/>
+                </properties>
+              </component>
+              <component id="456eb" class="javax.swing.JTextField" binding="tf_gender">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="true"/>
                   <font size="18"/>
                 </properties>
               </component>
@@ -231,7 +234,7 @@
                   <text value="宗教信仰："/>
                 </properties>
               </component>
-              <component id="1e156" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+              <component id="1e156" class="javax.swing.JTextField" binding="tf_religion">
                 <constraints>
                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -313,7 +316,7 @@
                   <text value="迁入或迁出："/>
                 </properties>
               </component>
-              <component id="33bb4" class="javax.swing.JTextField" binding="textField10" default-binding="true">
+              <component id="33bb4" class="javax.swing.JTextField" binding="tf_IDNumber">
                 <constraints>
                   <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -323,7 +326,7 @@
                   <font size="18"/>
                 </properties>
               </component>
-              <component id="e4297" class="javax.swing.JTextField" binding="textField11" default-binding="true">
+              <component id="e4297" class="javax.swing.JTextField" binding="tf_height">
                 <constraints>
                   <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -333,7 +336,7 @@
                   <font size="18"/>
                 </properties>
               </component>
-              <component id="3b23b" class="javax.swing.JTextField" binding="textField12" default-binding="true">
+              <component id="3b23b" class="javax.swing.JTextField" binding="tf_bloodType">
                 <constraints>
                   <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -343,7 +346,7 @@
                   <font size="18"/>
                 </properties>
               </component>
-              <component id="d525f" class="javax.swing.JTextField" binding="textField13" default-binding="true">
+              <component id="d525f" class="javax.swing.JTextField" binding="tf_educationalLevel">
                 <constraints>
                   <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -353,7 +356,7 @@
                   <font size="18"/>
                 </properties>
               </component>
-              <component id="747b2" class="javax.swing.JTextField" binding="textField14" default-binding="true">
+              <component id="747b2" class="javax.swing.JTextField" binding="tf_marriageStatus">
                 <constraints>
                   <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -363,7 +366,7 @@
                   <font size="18"/>
                 </properties>
               </component>
-              <component id="6959f" class="javax.swing.JTextField" binding="textField15" default-binding="true">
+              <component id="6959f" class="javax.swing.JTextField" binding="tf_militaryStatus">
                 <constraints>
                   <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -373,7 +376,7 @@
                   <font size="18"/>
                 </properties>
               </component>
-              <component id="fc72" class="javax.swing.JTextField" binding="textField16" default-binding="true">
+              <component id="fc72" class="javax.swing.JTextField" binding="tf_occupation">
                 <constraints>
                   <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -383,7 +386,7 @@
                   <font size="18"/>
                 </properties>
               </component>
-              <component id="52706" class="javax.swing.JTextField" binding="textField17" default-binding="true">
+              <component id="52706" class="javax.swing.JTextField" binding="tf_ImmigrationEmigration">
                 <constraints>
                   <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -405,11 +408,12 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="739e8" class="javax.swing.JButton" binding="添加Button" default-binding="true">
+          <component id="739e8" class="javax.swing.JButton" binding="bt_addUser">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <enabled value="true"/>
               <font size="18"/>
               <text value="添加"/>
             </properties>

@@ -1,29 +1,24 @@
 import javax.swing.*;
+import javax.tools.Tool;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * Created by andy on 9/6/16.
+ * Created by andy on 9/13/16.
  */
-public class UserUI {
-    private JButton bt_checkCensus;
-    private JButton bt_changePassword;
-    public JPanel jp_user;
-    private JPanel jp_userImage;
-    private JLabel jl_userImage;
-
+public class AdminAccountManagement {
+    private JButton bt_addAccount;
+    private JButton bt_deleteAccount;
+    public JPanel jp_addAccount;
     public Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
 
-    public UserUI(String userName) {
-        ImageIcon imageIcon = new ImageIcon("/home/andy/Projects/IdeaProjects/CensusManagement/resources/images/userImage.png");
-        jl_userImage.setIcon(imageIcon);
-
-        bt_checkCensus.addActionListener(new ActionListener() {
+    public AdminAccountManagement() {
+        bt_addAccount.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame frame = new JFrame("UserCheckCensus");
-                frame.setContentPane(new UserCheckCensus(userName).jp_userCheckCensus);
+                JFrame frame = new JFrame("AddAccount");
+                frame.setContentPane(new AdminAddAccount().jp_addAccount);
                 frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 frame.pack();
                 frame.setSize(600, 400);
@@ -32,12 +27,11 @@ public class UserUI {
                 frame.setVisible(true);
             }
         });
-
-        bt_changePassword.addActionListener(new ActionListener() {
+        bt_deleteAccount.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame frame = new JFrame("UserChangePassword");
-                frame.setContentPane(new UserChangePassword().jp_userChangePassword);
+                JFrame frame = new JFrame("DeleteAccount");
+                frame.setContentPane(new AdminDeleteAccount().jp_deleteAccount);
                 frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 frame.pack();
                 frame.setSize(600, 400);
@@ -46,6 +40,5 @@ public class UserUI {
                 frame.setVisible(true);
             }
         });
-
     }
 }

@@ -31,7 +31,7 @@ public class Login {
             dbOperations.addUserAccount("admin", "1234", "1", null);
         }
         if(!dbOperations.checkValueExists("userAccount", "user1")) {
-            dbOperations.addUserAccount("user1", "4321", "0", "220321199608081933");
+            dbOperations.addUserAccount("user1", "4321", "0", "111");
         }
 
         //点击登录按钮从数据库中验证并判断权限
@@ -54,7 +54,7 @@ public class Login {
                     } else {
                         //如果为普通用户
                         JFrame userFrame = new JFrame("UserUI");
-                        userFrame.setContentPane(new UserUI().jp_user);
+                        userFrame.setContentPane(new UserUI(tf_userName.getText()).jp_user);
                         userFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                         userFrame.pack();
                         userFrame.setResizable(false);

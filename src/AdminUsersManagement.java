@@ -19,7 +19,7 @@ public class AdminUsersManagement {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JFrame frame = new JFrame("AdminAddUser");
-                frame.setContentPane(new AdminAddUser().jp_addUser);
+                frame.setContentPane(new AdminAddUser(frame).jp_addUser);
                 frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 frame.pack();
                 frame.setSize(600, 400);
@@ -36,8 +36,7 @@ public class AdminUsersManagement {
                 frame.setContentPane(new AdminDeleteUser().jp_deleteUser);
                 frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 frame.pack();
-                frame.setSize(600, 400);
-                frame.setLocation((dimension.width - frame.getWidth())/2, (dimension.height - frame.getHeight())/2);
+                frame.setSize(dimension.width, dimension.height);
                 frame.setResizable(false);
                 frame.setVisible(true);
             }
@@ -49,8 +48,7 @@ public class AdminUsersManagement {
                 frame.setContentPane(new AdminUpdateUser().jp_updateUser);
                 frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 frame.pack();
-                frame.setSize(600, 600);
-                frame.setLocation((dimension.width - frame.getWidth())/2, (dimension.height - frame.getHeight())/2);
+                frame.setSize(dimension.width, dimension.height);
                 frame.setResizable(false);
                 frame.setVisible(true);
             }
@@ -62,8 +60,7 @@ public class AdminUsersManagement {
                 frame.setContentPane(new AdminSearchUser().jp_searchUser);
                 frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 frame.pack();
-                frame.setSize(600, 600);
-                frame.setLocation((dimension.width - frame.getWidth())/2, (dimension.height - frame.getHeight())/2);
+                frame.setSize(dimension.width, dimension.height);
                 frame.setResizable(false);
                 frame.setVisible(true);
             }

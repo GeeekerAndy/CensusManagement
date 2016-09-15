@@ -46,7 +46,7 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="2bf8" class="javax.swing.JLabel">
+              <component id="2bf8" class="javax.swing.JLabel" binding="lb_censusID">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -56,7 +56,7 @@
                   <text value="户号：21344321"/>
                 </properties>
               </component>
-              <component id="e9ea7" class="javax.swing.JLabel">
+              <component id="e9ea7" class="javax.swing.JLabel" binding="lb_hostName">
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -66,7 +66,7 @@
                   <text value="户主姓名：Andy"/>
                 </properties>
               </component>
-              <component id="64517" class="javax.swing.JLabel">
+              <component id="64517" class="javax.swing.JLabel" binding="lb_censusType">
                 <constraints>
                   <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -76,7 +76,7 @@
                   <text value="户口类型：非农业户口"/>
                 </properties>
               </component>
-              <component id="cb18a" class="javax.swing.JLabel">
+              <component id="cb18a" class="javax.swing.JLabel" binding="lb_hostOrRelation">
                 <constraints>
                   <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -86,7 +86,7 @@
                   <text value="户主或关系：户主"/>
                 </properties>
               </component>
-              <component id="bbecd" class="javax.swing.JLabel" binding="jl_userCensusAddress">
+              <component id="bbecd" class="javax.swing.JLabel" binding="lb_CensusAddress">
                 <constraints>
                   <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
