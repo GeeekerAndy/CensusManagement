@@ -237,6 +237,9 @@ public class DBOperations {
     //添加用户信息
     public void addUserAccount(String userName, String userPassword, String userPower, String IDNumber) {
         try {
+            if(userName.equals("")) {
+                throw new Exception();
+            }
             this.connectDatabase();
             Statement statement = this.connection.createStatement();
             String sql = "INSERT INTO userAccount (userName, userPassword, userPower, IDNumber) VALUES ('" +
@@ -250,12 +253,18 @@ public class DBOperations {
         } catch (SQLException e) {
             e.printStackTrace();
             JOptionPane.showMessageDialog(null, "添加失败", "Error", JOptionPane.ERROR_MESSAGE);
+        } catch (Exception e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "用户名为空！", "ERROR", JOptionPane.ERROR_MESSAGE);
         }
     }
 
     //添加户籍
     public void addCensus(String[] arrCensus) {
         try {
+            if(arrCensus[0].equals("")) {
+                throw new Exception();
+            }
             this.connectDatabase();
             Statement statement = this.connection.createStatement();
             String sql = "INSERT INTO census (censusID, censusType, censusHost, censusAddress) VALUES ('" +
@@ -271,6 +280,9 @@ public class DBOperations {
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, "添加户籍失败,请重新输入!", "Error", JOptionPane.ERROR_MESSAGE);
             e.printStackTrace();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "户籍号为空!", "Error", JOptionPane.ERROR_MESSAGE);
+            e.printStackTrace();
         }
 
     }
@@ -278,6 +290,9 @@ public class DBOperations {
     //添加个人信息
     public void addPersonalInfo(String[] arrPersonalInfo) {
         try {
+            if(arrPersonalInfo[10].equals("")) {
+                throw new Exception();
+            }
             this.connectDatabase();
             Statement statement = this.connection.createStatement();
             String sql = "INSERT INTO personalInfo (name, censusID, hostOrRelation, formerName, " +
@@ -308,6 +323,9 @@ public class DBOperations {
             this.disconnectDatabase();
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, "输入的数据格式错误,或者输入了他人的身份证号, 请重新输入！", "Error", JOptionPane.ERROR_MESSAGE);
+            e.printStackTrace();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "身份证号为空！", "Error", JOptionPane.ERROR_MESSAGE);
             e.printStackTrace();
         }
     }
@@ -580,38 +598,38 @@ public class DBOperations {
             this.connectDatabase();
             String sqlSearchIDNumberByUserName = "SELECT IDNumber FROM userAccount WHERE userName = '" + userName + "';";
             Statement statement = this.connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(sqlSearchIDNumberByUserName);
+            ResultSet resultSetIDNumber = statement.executeQuery(sqlSearchIDNumberByUserName);
             String IDNumber = null;
-            while(resultSet.next()) {
-                IDNumber = resultSet.getString("IDNumber");
+            while(resultSetIDNumber.next()) {
+                IDNumber = resultSetIDNumber.getString("IDNumber");
             }
-            resultSet = null;
             String sqlSearchCensusIDByIDNumber = "SELECT censusID FROM personalInfo WHERE IDNumber = '" + IDNumber + "';";
-            resultSet = statement.executeQuery(sqlSearchCensusIDByIDNumber);
+            ResultSet resultSetCensusID = statement.executeQuery(sqlSearchCensusIDByIDNumber);
             String censusID = null;
-            while(resultSet.next()) {
-                censusID = resultSet.getString("censusID");
+            while(resultSetCensusID.next()) {
+                censusID = resultSetCensusID.getString("censusID");
             }
-            resultSet = null;
             String[] result = new String[5];
             String sqlSearchCensus = "SELECT * FROM census WHERE censusID = '" + censusID + "';";
-            resultSet = statement.executeQuery(sqlSearchCensus);
-            while(resultSet.next()) {
-                result[0] = resultSet.getString("censusID");
-                result[1] = resultSet.getString("censusType");
-                result[2] = resultSet.getString("censusHost");
+            ResultSet resultSetCensus = statement.executeQuery(sqlSearchCensus);
+            while(resultSetCensus.next()) {
+                result[0] = resultSetCensus.getString("censusID");
+                result[1] = resultSetCensus.getString("censusHost");
+                result[2] = resultSetCensus.getString("censusType");
                 //result[3] will be added below;
-                result[4] = resultSet.getString("censusAddress");
+                result[4] = resultSetCensus.getString("censusAddress");
 
             }
-            resultSet = null;
             String sqlHostOrRelation = "SELECT hostOrRelation FROM personalInfo WHERE IDNumber = '" + IDNumber + "';";
-            resultSet = statement.executeQuery(sqlHostOrRelation);
-            while(resultSet.next()) {
-                result[3] = resultSet.getString(1);
+            ResultSet resultSetHostOrRelation = statement.executeQuery(sqlHostOrRelation);
+            while(resultSetHostOrRelation.next()) {
+                result[3] = resultSetHostOrRelation.getString(1);
             }
             statement.close();
-            resultSet.close();
+            resultSetIDNumber.close();
+            resultSetCensus.close();
+            resultSetCensusID.close();
+            resultSetHostOrRelation.close();
             this.disconnectDatabase();
             System.out.println("Search census information by user name successful.");
             return result;
@@ -624,6 +642,7 @@ public class DBOperations {
         }
         return null;
     }
+
     //更新户籍信息
     public void updateCensus(String censusID, String censusColumn, String censusInfo) {
         try {
@@ -680,4 +699,34 @@ public class DBOperations {
         }
     }
 
+    //更新帐号密码
+    public void updatePassword(String userName, String oldPassword, String newPassword) {
+        try {
+            this.connectDatabase();
+            Statement statement = this.connection.createStatement();
+            String sqlGetOldPassword = "SELECT userPassword FROM userAccount WHERE userName = '" + userName + "';";
+            String sqlUpdatePassword = "UPDATE userAccount SET userPassword = '" + newPassword + "' WHERE userName = '" + userName + "';";
+            ResultSet resultSet = statement.executeQuery(sqlGetOldPassword);
+            String passwordFromDB = null;
+            while(resultSet.next()) {
+                passwordFromDB = resultSet.getString("userPassword");
+            }
+            if(oldPassword.equals(passwordFromDB)) {
+                statement.execute(sqlUpdatePassword);
+            } else {
+                throw new Exception();
+            }
+            statement.close();
+            resultSet.close();
+            this.disconnectDatabase();
+            System.out.println("Password updated.");
+            JOptionPane.showMessageDialog(null, "更改密码成功！", "Success", JOptionPane.INFORMATION_MESSAGE);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "更新密码失败！", "Error", JOptionPane.ERROR_MESSAGE);
+        } catch (Exception e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "旧密码错误！", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }
 }

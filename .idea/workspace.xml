@@ -2,38 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4c1ccb3-3c16-4653-a486-55542e054115" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AdminAccountManagement.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AdminAccountManagement.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AdminAddAccount.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AdminAddAccount.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AdminDeleteAccount.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AdminDeleteAccount.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CensusManagement/Login.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CensusManagement/UserUI.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CensusManagement/Login$1.class" afterPath="$PROJECT_DIR$/out/production/CensusManagement/Login$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdminAddCensus.form" afterPath="$PROJECT_DIR$/src/AdminAddCensus.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdminAddCensus.java" afterPath="$PROJECT_DIR$/src/AdminAddCensus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdminAddUser.form" afterPath="$PROJECT_DIR$/src/AdminAddUser.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdminAddUser.java" afterPath="$PROJECT_DIR$/src/AdminAddUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdminDeleteCensus.form" afterPath="$PROJECT_DIR$/src/AdminDeleteCensus.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdminDeleteCensus.java" afterPath="$PROJECT_DIR$/src/AdminDeleteCensus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdminDeleteUser.form" afterPath="$PROJECT_DIR$/src/AdminDeleteUser.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdminDeleteUser.java" afterPath="$PROJECT_DIR$/src/AdminDeleteUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdminSearchCensus.form" afterPath="$PROJECT_DIR$/src/AdminSearchCensus.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdminSearchCensus.java" afterPath="$PROJECT_DIR$/src/AdminSearchCensus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdminSearchUser.form" afterPath="$PROJECT_DIR$/src/AdminSearchUser.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdminSearchUser.java" afterPath="$PROJECT_DIR$/src/AdminSearchUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdminUI.form" afterPath="$PROJECT_DIR$/src/AdminUI.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdminUI.java" afterPath="$PROJECT_DIR$/src/AdminUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdminUpdateCensus.form" afterPath="$PROJECT_DIR$/src/AdminUpdateCensus.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdminUpdateCensus.java" afterPath="$PROJECT_DIR$/src/AdminUpdateCensus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdminUpdateUser.form" afterPath="$PROJECT_DIR$/src/AdminUpdateUser.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdminUpdateUser.java" afterPath="$PROJECT_DIR$/src/AdminUpdateUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdminUsersManagement.form" afterPath="$PROJECT_DIR$/src/AdminUsersManagement.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdminUsersManagement.java" afterPath="$PROJECT_DIR$/src/AdminUsersManagement.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DBOperations.java" afterPath="$PROJECT_DIR$/src/DBOperations.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Login.java" afterPath="$PROJECT_DIR$/src/Login.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserCheckCensus.form" afterPath="$PROJECT_DIR$/src/UserCheckCensus.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserChangePassword.form" afterPath="$PROJECT_DIR$/src/UserChangePassword.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserChangePassword.java" afterPath="$PROJECT_DIR$/src/UserChangePassword.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserCheckCensus.java" afterPath="$PROJECT_DIR$/src/UserCheckCensus.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserUI.java" afterPath="$PROJECT_DIR$/src/UserUI.java" />
     </list>
@@ -56,30 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AdminDeleteCensus.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AdminDeleteCensus.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="42" column="17" selection-start-line="31" selection-start-column="16" selection-end-line="42" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminAccountManagement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AdminAccountManagement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AdminDeleteAccount.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AdminDeleteAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="738">
               <caret line="46" column="68" selection-start-line="46" selection-start-column="68" selection-end-line="46" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -93,8 +46,8 @@
       <file leaf-file-name="UserUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UserUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+            <state relative-caret-position="216">
+              <caret line="39" column="68" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -103,8 +56,8 @@
       <file leaf-file-name="UserCheckCensus.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UserCheckCensus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="214">
+              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -112,15 +65,18 @@
       </file>
       <file leaf-file-name="UserCheckCensus.form" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UserCheckCensus.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="358">
               <caret line="56" column="81" selection-start-line="56" selection-start-column="81" selection-end-line="56" selection-end-column="81" />
               <folding />
             </state>
@@ -129,23 +85,19 @@
       </file>
       <file leaf-file-name="Login.form" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Login.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminDeleteAccount.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AdminDeleteAccount.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DBOperations.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DBOperations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="603" column="62" selection-start-line="603" selection-start-column="62" selection-end-line="603" selection-end-column="62" />
+            <state relative-caret-position="251">
+              <caret line="715" column="20" selection-start-line="715" selection-start-column="20" selection-end-line="715" selection-end-column="20" />
               <folding>
                 <element signature="method#DBOperations#0;class#DBOperations#0" expanded="false" />
                 <element signature="method#connectDatabase#0;class#DBOperations#0" expanded="false" />
@@ -166,11 +118,39 @@
                 <element signature="method#deleteCensus#0;class#DBOperations#0" expanded="false" />
                 <element signature="method#deletePersonalInfo#0;class#DBOperations#0" expanded="false" />
                 <element signature="method#searchCensusByID#0;class#DBOperations#0" expanded="false" />
+                <element signature="method#searchCensusByHostIDNumber#0;class#DBOperations#0" expanded="false" />
                 <element signature="method#searchPersonalInfo#0;class#DBOperations#0" expanded="false" />
                 <element signature="method#searchAccount#0;class#DBOperations#0" expanded="false" />
+                <element signature="method#searchCensusByUserName#0;class#DBOperations#0" expanded="false" />
                 <element signature="method#updateCensus#0;class#DBOperations#0" expanded="false" />
-                <element signature="method#updatePersonalInfo#0;class#DBOperations#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserChangePassword.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UserChangePassword.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserChangePassword.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UserChangePassword.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminAddAccount.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AdminAddAccount.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -201,8 +181,6 @@
         <option value="$PROJECT_DIR$/src/Main/UserUI.java" />
         <option value="$PROJECT_DIR$/src/AdministratorUI.form" />
         <option value="$PROJECT_DIR$/src/AdministratorUI.java" />
-        <option value="$PROJECT_DIR$/src/UserChangePassword.form" />
-        <option value="$PROJECT_DIR$/src/UserChangePassword.java" />
         <option value="$PROJECT_DIR$/src/UserUI.form" />
         <option value="$PROJECT_DIR$/src/AdminAddUser.form" />
         <option value="$PROJECT_DIR$/src/AdminUI.form" />
@@ -233,7 +211,9 @@
         <option value="$PROJECT_DIR$/src/Login.java" />
         <option value="$PROJECT_DIR$/src/UserCheckCensus.form" />
         <option value="$PROJECT_DIR$/src/UserCheckCensus.java" />
+        <option value="$PROJECT_DIR$/src/UserChangePassword.form" />
         <option value="$PROJECT_DIR$/src/UserUI.java" />
+        <option value="$PROJECT_DIR$/src/UserChangePassword.java" />
         <option value="$PROJECT_DIR$/src/DBOperations.java" />
       </list>
     </option>
@@ -279,6 +259,113 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CensusManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CensusManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CensusManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CensusManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CensusManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserUI" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CensusManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CensusManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserCheckCensus" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CensusManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CensusManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserChangePassword" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CensusManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CensusManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Login" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CensusManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CensusManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane">
         <subPane />
       </pane>
       <pane id="Scope">
@@ -295,10 +382,6 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane">
-        <subPane />
       </pane>
     </panes>
   </component>
@@ -637,7 +720,14 @@
       <option name="project" value="LOCAL" />
       <updated>1473661090537</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Finish admin model.">
+      <created>1473951766347</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1473951766347</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -651,13 +741,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3142415" sideWeight="0.5030303" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3142415" sideWeight="0.4969697" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3018576" sideWeight="0.4969697" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.4969697" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47832817" sideWeight="0.4969697" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23181818" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="452" y="198" width="461" height="487" />
@@ -669,6 +758,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -731,11 +821,12 @@
     <MESSAGE value="Init the project and basic UI." />
     <MESSAGE value="All three databases created." />
     <MESSAGE value="Finish all the UI Frames." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish all the UI Frames." />
+    <MESSAGE value="Finish admin model." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish admin model." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -816,16 +907,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserChangePassword.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UserUI.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
@@ -866,16 +947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AdminAddAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AdminDeleteCensus.form">
       <provider editor-type-id="ui-designer">
         <state />
@@ -910,7 +981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -949,7 +1019,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -960,7 +1029,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -992,14 +1060,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserChangePassword.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AdminAddUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
@@ -1024,7 +1084,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
           <caret line="62" column="63" selection-start-line="62" selection-start-column="63" selection-end-line="62" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1059,10 +1118,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AdminDeleteAccount.form">
-      <provider selected="true" editor-type-id="ui-designer">
+      <provider editor-type-id="ui-designer">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -1071,7 +1130,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AdminAccountManagement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
+        <state relative-caret-position="522">
           <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
           <folding />
         </state>
@@ -1079,7 +1138,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AdminDeleteCensus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="648">
           <caret line="42" column="17" selection-start-line="31" selection-start-column="16" selection-end-line="42" selection-end-column="17" />
           <folding />
         </state>
@@ -1087,7 +1146,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AdminDeleteAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="738">
           <caret line="46" column="68" selection-start-line="46" selection-start-column="68" selection-end-line="46" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1098,24 +1157,44 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Login.form">
-      <provider selected="true" editor-type-id="ui-designer">
+      <provider editor-type-id="ui-designer">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="56" column="81" selection-start-line="56" selection-start-column="81" selection-end-line="56" selection-end-column="81" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UserCheckCensus.form">
+      <provider editor-type-id="ui-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AdminAddAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserCheckCensus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserChangePassword.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
@@ -1125,26 +1204,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserCheckCensus.java">
+    <entry file="file://$PROJECT_DIR$/src/UserUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="216">
+          <caret line="39" column="68" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserUI.java">
+    <entry file="file://$PROJECT_DIR$/src/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+        <state relative-caret-position="358">
+          <caret line="56" column="81" selection-start-line="56" selection-start-column="81" selection-end-line="56" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserChangePassword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DBOperations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="603" column="62" selection-start-line="603" selection-start-column="62" selection-end-line="603" selection-end-column="62" />
+        <state relative-caret-position="251">
+          <caret line="715" column="20" selection-start-line="715" selection-start-column="20" selection-end-line="715" selection-end-column="20" />
           <folding>
             <element signature="method#DBOperations#0;class#DBOperations#0" expanded="false" />
             <element signature="method#connectDatabase#0;class#DBOperations#0" expanded="false" />
@@ -1165,10 +1252,11 @@
             <element signature="method#deleteCensus#0;class#DBOperations#0" expanded="false" />
             <element signature="method#deletePersonalInfo#0;class#DBOperations#0" expanded="false" />
             <element signature="method#searchCensusByID#0;class#DBOperations#0" expanded="false" />
+            <element signature="method#searchCensusByHostIDNumber#0;class#DBOperations#0" expanded="false" />
             <element signature="method#searchPersonalInfo#0;class#DBOperations#0" expanded="false" />
             <element signature="method#searchAccount#0;class#DBOperations#0" expanded="false" />
+            <element signature="method#searchCensusByUserName#0;class#DBOperations#0" expanded="false" />
             <element signature="method#updateCensus#0;class#DBOperations#0" expanded="false" />
-            <element signature="method#updatePersonalInfo#0;class#DBOperations#0" expanded="false" />
           </folding>
         </state>
       </provider>

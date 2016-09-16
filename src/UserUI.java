@@ -37,7 +37,7 @@ public class UserUI {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JFrame frame = new JFrame("UserChangePassword");
-                frame.setContentPane(new UserChangePassword().jp_userChangePassword);
+                frame.setContentPane(new UserChangePassword(userName).jp_userChangePassword);
                 frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 frame.pack();
                 frame.setSize(600, 400);
