@@ -90,6 +90,5 @@ public class Login {
         frame.setSize(600, 400);
         frame.setLocation((dimension.width - frame.getWidth())/2, (dimension.height - frame.getHeight())/2);
         frame.setVisible(true);
-
     }
 }

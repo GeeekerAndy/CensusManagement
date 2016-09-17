@@ -89,67 +89,75 @@
               <text value=""/>
             </properties>
           </component>
-          <component id="b2746" class="javax.swing.JLabel">
+          <component id="b2746" class="javax.swing.JLabel" binding="lb_name">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font size="18"/>
               <text value="Label"/>
             </properties>
           </component>
-          <component id="4f61a" class="javax.swing.JLabel">
+          <component id="4f61a" class="javax.swing.JLabel" binding="lb_censusID">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font size="18"/>
               <text value="Label"/>
             </properties>
           </component>
-          <component id="2ceae" class="javax.swing.JLabel">
+          <component id="2ceae" class="javax.swing.JLabel" binding="lb_hostOrRelation">
             <constraints>
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font size="18"/>
               <text value="Label"/>
             </properties>
           </component>
-          <component id="24eba" class="javax.swing.JLabel">
+          <component id="24eba" class="javax.swing.JLabel" binding="lb_formerName">
             <constraints>
               <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font size="18"/>
               <text value="Label"/>
             </properties>
           </component>
-          <component id="66d63" class="javax.swing.JLabel">
+          <component id="66d63" class="javax.swing.JLabel" binding="lb_gender">
             <constraints>
               <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font size="18"/>
               <text value="Label"/>
             </properties>
           </component>
-          <component id="edec3" class="javax.swing.JLabel">
+          <component id="edec3" class="javax.swing.JLabel" binding="lb_birthplace">
             <constraints>
               <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font size="18"/>
               <text value="Label"/>
             </properties>
           </component>
-          <component id="b3fd9" class="javax.swing.JLabel">
+          <component id="b3fd9" class="javax.swing.JLabel" binding="lb_nationality">
             <constraints>
               <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font size="18"/>
               <text value="Label"/>
             </properties>
           </component>
-          <component id="112ef" class="javax.swing.JLabel">
+          <component id="112ef" class="javax.swing.JLabel" binding="lb_birthday">
             <constraints>
               <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font size="18"/>
               <text value="Label"/>
             </properties>
           </component>
@@ -161,11 +169,12 @@
               <text value=""/>
             </properties>
           </component>
-          <component id="6a488" class="javax.swing.JLabel">
+          <component id="6a488" class="javax.swing.JLabel" binding="lb_address">
             <constraints>
               <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font size="18"/>
               <text value="Label"/>
             </properties>
           </component>
@@ -187,67 +196,75 @@
               <text value=""/>
             </properties>
           </component>
-          <component id="846c4" class="javax.swing.JLabel">
+          <component id="846c4" class="javax.swing.JLabel" binding="lb_religion">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font size="18"/>
               <text value="Label"/>
             </properties>
           </component>
-          <component id="ac611" class="javax.swing.JLabel">
+          <component id="ac611" class="javax.swing.JLabel" binding="lb_IDNumber">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font size="18"/>
               <text value="Label"/>
             </properties>
           </component>
-          <component id="1591f" class="javax.swing.JLabel">
+          <component id="1591f" class="javax.swing.JLabel" binding="lb_height">
             <constraints>
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font size="18"/>
               <text value="Label"/>
             </properties>
           </component>
-          <component id="c6b5b" class="javax.swing.JLabel">
+          <component id="c6b5b" class="javax.swing.JLabel" binding="lb_bloodType">
             <constraints>
               <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font size="18"/>
               <text value="Label"/>
             </properties>
           </component>
-          <component id="a6ca6" class="javax.swing.JLabel">
+          <component id="a6ca6" class="javax.swing.JLabel" binding="lb_educationLevel">
             <constraints>
               <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font size="18"/>
               <text value="Label"/>
             </properties>
           </component>
-          <component id="5b9ea" class="javax.swing.JLabel">
+          <component id="5b9ea" class="javax.swing.JLabel" binding="lb_marriageStatus">
             <constraints>
               <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font size="18"/>
               <text value="Label"/>
             </properties>
           </component>
-          <component id="95930" class="javax.swing.JLabel">
+          <component id="95930" class="javax.swing.JLabel" binding="lb_militaryStatus">
             <constraints>
               <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font size="18"/>
               <text value="Label"/>
             </properties>
           </component>
-          <component id="ceeed" class="javax.swing.JLabel">
+          <component id="ceeed" class="javax.swing.JLabel" binding="lb_occupation">
             <constraints>
               <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font size="18"/>
               <text value="Label"/>
             </properties>
           </component>
@@ -259,11 +276,12 @@
               <text value=""/>
             </properties>
           </component>
-          <component id="2145d" class="javax.swing.JLabel">
+          <component id="2145d" class="javax.swing.JLabel" binding="lb_ImEm">
             <constraints>
               <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font size="18"/>
               <text value="Label"/>
             </properties>
           </component>

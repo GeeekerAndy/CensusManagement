@@ -14,11 +14,13 @@ public class AdminSearchCensus {
     private JTextField tf_searchCensus;
     private JButton bt_searchCensus;
     private JTable jt_resultCensus;
+    private JRadioButton rb_All;
 
     public AdminSearchCensus() {
         ButtonGroup buttonGroup = new ButtonGroup();
         buttonGroup.add(rb_byCensusID);
         buttonGroup.add(rb_byHostIDNumber);
+        buttonGroup.add(rb_All);
 
         bt_searchCensus.addActionListener(new ActionListener() {
             @Override
@@ -36,6 +38,13 @@ public class AdminSearchCensus {
                 if(rb_byHostIDNumber.isSelected()) {
                     String[] resultCensusArr = dbOperations.searchCensusByHostIDNumber(tf_searchCensus.getText());
                     model.addRow(resultCensusArr);
+                }
+                if(rb_All.isSelected()) {
+                    String[] resultCensusArr = dbOperations.searchCensusAll();
+                    for(int i = 0; i < resultCensusArr.length/4; i++) {
+                        Object[] objects = {resultCensusArr[i*4 + 0], resultCensusArr[i*4 + 1], resultCensusArr[i*4 +2], resultCensusArr[i*4 + 3]};
+                        model.addRow(objects);
+                    }
                 }
                 jt_resultCensus.setModel(model);
                 for (int row = 0; row < jt_resultCensus.getRowCount(); row++)

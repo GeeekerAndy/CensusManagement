@@ -16,17 +16,17 @@ public class DBOperations {
 
     private Connection connection;
 
-    public DBOperations () {
+    public DBOperations() {
 
         this.connectDatabase();
 
-        if(!this.checkTableExists("userAccount")) {
+        if (!this.checkTableExists("userAccount")) {
             this.createTableUserAccount();
         }
-        if(!this.checkTableExists("census")) {
+        if (!this.checkTableExists("census")) {
             this.createTableCensus();
         }
-        if(!this.checkTableExists("personalInfo")) {
+        if (!this.checkTableExists("personalInfo")) {
             this.createTablePersonalInfo();
         }
         this.disconnectDatabase();
@@ -82,11 +82,11 @@ public class DBOperations {
         try {
             DatabaseMetaData dbm = this.connection.getMetaData();
             ResultSet tables = dbm.getTables(null, null, tableName, null);
-            if(tables.next()) {
+            if (tables.next()) {
                 return true;
             }
             tables.close();
-        } catch(SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return false;
@@ -96,11 +96,11 @@ public class DBOperations {
     public boolean checkValueExists(String tableName, String value) {
         try {
             this.connectDatabase();
-            if(tableName.equals("userAccount")) {
+            if (tableName.equals("userAccount")) {
                 String sql = "SELECT * FROM " + tableName + " WHERE userName = '" + value + "';";
                 Statement statement = this.connection.createStatement();
                 ResultSet resultSet = statement.executeQuery(sql);
-                if(resultSet.absolute(1)) {
+                if (resultSet.absolute(1)) {
                     this.disconnectDatabase();
                     return true;
                 }
@@ -158,7 +158,7 @@ public class DBOperations {
             statement.execute(sql);
             System.out.println("Table census created.");
             statement.close();
-        } catch(SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }
@@ -191,7 +191,7 @@ public class DBOperations {
             statement.execute(sql);
             statement.close();
             System.out.println("Table personalInfo created.");
-        } catch(SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }
@@ -201,9 +201,9 @@ public class DBOperations {
         try {
             this.connectDatabase();
             Statement statement = connection.createStatement();
-            String sql = "SELECT * FROM userAccount WHERE userName = '" + userName +"' && userPassword = '" + userPassword + "';";
+            String sql = "SELECT * FROM userAccount WHERE userName = '" + userName + "' && userPassword = '" + userPassword + "';";
             ResultSet resultSet = statement.executeQuery(sql);
-            if(resultSet.absolute(1)) {
+            if (resultSet.absolute(1)) {
                 this.disconnectDatabase();
                 return true;
             }
@@ -222,7 +222,7 @@ public class DBOperations {
             String sql = "SELECT * FROM userAccount WHERE userName = '" + userName + "' && userPassword = '" + userPassword + "' && userPower = '1';";
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
-            if(resultSet.absolute(1)) {
+            if (resultSet.absolute(1)) {
                 this.disconnectDatabase();
                 return true;
             }
@@ -237,7 +237,7 @@ public class DBOperations {
     //添加用户信息
     public void addUserAccount(String userName, String userPassword, String userPower, String IDNumber) {
         try {
-            if(userName.equals("")) {
+            if (userName.equals("")) {
                 throw new Exception();
             }
             this.connectDatabase();
@@ -262,7 +262,7 @@ public class DBOperations {
     //添加户籍
     public void addCensus(String[] arrCensus) {
         try {
-            if(arrCensus[0].equals("")) {
+            if (arrCensus[0].equals("")) {
                 throw new Exception();
             }
             this.connectDatabase();
@@ -290,7 +290,7 @@ public class DBOperations {
     //添加个人信息
     public void addPersonalInfo(String[] arrPersonalInfo) {
         try {
-            if(arrPersonalInfo[10].equals("")) {
+            if (arrPersonalInfo[10].equals("")) {
                 throw new Exception();
             }
             this.connectDatabase();
@@ -334,14 +334,14 @@ public class DBOperations {
     public void deleteUserAccount(String userName) {
         try {
             this.connectDatabase();
-            if(userName.equals("")) {
+            if (userName.equals("")) {
                 throw new Exception("User number does not exist.");
             }
             Statement statement = this.connection.createStatement();
             String sqlDelete = "DELETE FROM userAccount WHERE userName = '" + userName + "';";
             String sqlSearch = "SELECT * FROM userAccount WHERE userName = '" + userName + "';";
             ResultSet resultSet = statement.executeQuery(sqlSearch);
-            if(!resultSet.absolute(1)) {
+            if (!resultSet.absolute(1)) {
                 throw new Exception("User number does not exist.");
             }
             statement.execute(sqlDelete);
@@ -363,7 +363,7 @@ public class DBOperations {
     //删除户籍
     public void deleteCensus(String censusID) {
         try {
-            if(censusID.equals("")) {
+            if (censusID.equals("")) {
                 throw new Exception("CensusID does not exist.");
             }
             this.connectDatabase();
@@ -371,7 +371,7 @@ public class DBOperations {
             String sqlDelete = "DELETE FROM census WHERE censusID = '" + censusID + "';";
             String sqlSearch = "SELECT * FROM census WHERE censusID = '" + censusID + "';";
             ResultSet resultSet = statement.executeQuery(sqlSearch);
-            if(!resultSet.absolute(1)) {
+            if (!resultSet.absolute(1)) {
                 throw new Exception("CensusID does not exist.");
             }
             statement.execute(sqlDelete);
@@ -421,7 +421,7 @@ public class DBOperations {
     //通过户号查询户籍信息
     public String[] searchCensusByID(String censusID) {
         try {
-            if(censusID.equals("")) {
+            if (censusID.equals("")) {
                 throw new Exception("CensusID does not Exist.");
             }
             this.connectDatabase();
@@ -429,20 +429,19 @@ public class DBOperations {
             String sql = "SELECT * FROM census WHERE censusID = '" + censusID + "';";
             ResultSet resultSet = statement.executeQuery(sql);
             String[] resultCensus = new String[4];
-            while(resultSet.next()) {
+            while (resultSet.next()) {
                 resultCensus[0] = resultSet.getString("censusID");
                 resultCensus[1] = resultSet.getString("censusType");
                 resultCensus[2] = resultSet.getString("censusHost");
                 resultCensus[3] = resultSet.getString("censusAddress");
             }
-            if(resultCensus[0].equals("")) {
+            if (resultCensus[0].equals("")) {
                 throw new Exception("CensusID does not Exist.");
             }
             statement.close();
             resultSet.close();
             this.disconnectDatabase();
             System.out.println("Search census success.");
-            JOptionPane.showMessageDialog(null, "查询成功！", "Success", JOptionPane.INFORMATION_MESSAGE);
             return resultCensus;
         } catch (SQLException e) {
             e.printStackTrace();
@@ -457,7 +456,7 @@ public class DBOperations {
     //通过身份帐号查询户籍信息
     public String[] searchCensusByHostIDNumber(String hostIDNumber) {
         try {
-            if(hostIDNumber.equals("")) {
+            if (hostIDNumber.equals("")) {
                 throw new Exception();
             }
             this.connectDatabase();
@@ -466,20 +465,20 @@ public class DBOperations {
                     hostIDNumber + "';";
             ResultSet resultSetcensusID = statement.executeQuery(sqlSearchCensusIDFromPersonalInfo);
             String censusID = null;
-            if(resultSetcensusID.next()) {
+            if (resultSetcensusID.next()) {
                 censusID = resultSetcensusID.getString("censusID");
             }
             System.out.println(censusID);
             String sql = "SELECT * FROM census WHERE censusID = '" + censusID + "';";
             ResultSet resultSetCensusInfo = statement.executeQuery(sql);
             String[] resultCensus = new String[4];
-            while(resultSetCensusInfo.next()) {
+            while (resultSetCensusInfo.next()) {
                 resultCensus[0] = resultSetCensusInfo.getString("censusID");
                 resultCensus[1] = resultSetCensusInfo.getString("censusType");
                 resultCensus[2] = resultSetCensusInfo.getString("censusHost");
                 resultCensus[3] = resultSetCensusInfo.getString("censusAddress");
             }
-            if(resultCensus[0].equals("")) {
+            if (resultCensus[0].equals("")) {
                 throw new Exception("CensusID does not Exist.");
             }
             statement.close();
@@ -487,7 +486,6 @@ public class DBOperations {
             resultSetCensusInfo.close();
             this.disconnectDatabase();
             System.out.println("Search census success.");
-            JOptionPane.showMessageDialog(null, "查询成功！", "Success", JOptionPane.INFORMATION_MESSAGE);
             return resultCensus;
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, "查询失败！户籍号不存在！", "Error", JOptionPane.ERROR_MESSAGE);
@@ -499,10 +497,37 @@ public class DBOperations {
         return null;
     }
 
+    //查询所有户籍信息
+    public String[] searchCensusAll() {
+        try {
+            this.connectDatabase();
+            Statement statement = this.connection.createStatement();
+            String sql = "SELECT * FROM census;";
+            ResultSet resultSet = statement.executeQuery(sql);
+            resultSet.last();
+            String[] result = new String[resultSet.getRow()*4];
+            resultSet.beforeFirst();
+            for(int i = 0; resultSet.next(); i++) {
+                result[i*4 + 0] = resultSet.getString("censusID");
+                result[i*4 + 1] = resultSet.getString("censusType");
+                result[i*4 + 2] = resultSet.getString("censusHost");
+                result[i*4 + 3] = resultSet.getString("censusAddress");
+            }
+            statement.close();
+            resultSet.close();
+            this.disconnectDatabase();
+            System.out.println("Search all census information finished.");
+            return result;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "查询失败！", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+        return null;
+    }
     //通过身份证号查询用户信息
     public String[] searchPersonalInfo(String IDNumber) {
         try {
-            if(IDNumber.equals("")) {
+            if (IDNumber.equals("")) {
                 throw new Exception("IDNumber does not exist.");
             }
             this.connectDatabase();
@@ -510,7 +535,7 @@ public class DBOperations {
             String[] result = new String[18];
             Statement statement = this.connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
-            while(resultSet.next()) {
+            while (resultSet.next()) {
                 result[0] = resultSet.getString("name");
                 result[1] = resultSet.getString("censusID");
                 result[2] = resultSet.getString("hostOrRelation");
@@ -531,14 +556,13 @@ public class DBOperations {
                 result[17] = resultSet.getString("ImmigrationEmigration");
 
             }
-            if(result[10].equals("")) {
+            if (result[10].equals("")) {
                 throw new Exception("IDNumber does not exist.");
             }
             statement.close();
             resultSet.close();
             this.disconnectDatabase();
             System.out.println("Personal information searched.");
-            JOptionPane.showMessageDialog(null, "查询成功！", "Success", JOptionPane.INFORMATION_MESSAGE);
             return result;
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, "查询失败！", "Error", JOptionPane.ERROR_MESSAGE);
@@ -551,10 +575,101 @@ public class DBOperations {
         return null;
     }
 
+    //根据姓名模糊查询用户信息
+    public String[] searchPersonalInfoByName(String name) {
+        try {
+            if (name.equals("")) {
+                throw new Exception();
+            }
+            this.connectDatabase();
+            Statement statement = this.connection.createStatement();
+            String sql = "SELECT * FROM personalInfo WHERE name = '" + name + "';";
+            ResultSet resultSet = statement.executeQuery(sql);
+            resultSet.last();
+            String[] result = new String[resultSet.getRow() * 18];
+            resultSet.beforeFirst();
+            for(int i = 0; resultSet.next(); i++) {
+                result[i*18 + 0] = resultSet.getString("name");
+                result[i*18 + 1] = resultSet.getString("censusID");
+                result[i*18 + 2] = resultSet.getString("hostOrRelation");
+                result[i*18 + 3] = resultSet.getString("formerName");
+                result[i*18 + 4] = resultSet.getString("gender");
+                result[i*18 + 5] = resultSet.getString("birthplace");
+                result[i*18 + 6] = resultSet.getString("nationality");
+                result[i*18 + 7] = resultSet.getString("birthday");
+                result[i*18 + 8] = resultSet.getString("address");
+                result[i*18 + 9] = resultSet.getString("religion");
+                result[i*18 + 10] = resultSet.getString("IDNumber");
+                result[i*18 + 11] = resultSet.getString("height");
+                result[i*18 + 12] = resultSet.getString("bloodType");
+                result[i*18 + 13] = resultSet.getString("educationLevel");
+                result[i*18 + 14] = resultSet.getString("marriageStatus");
+                result[i*18 + 15] = resultSet.getString("militaryStatus");
+                result[i*18 + 16] = resultSet.getString("occupation");
+                result[i*18 + 17] = resultSet.getString("ImmigrationEmigration");
+            }
+            statement.close();
+            resultSet.close();
+            this.disconnectDatabase();
+            System.out.println("Search personal information by name finished.");
+            return result;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "查询失败！", "Error", JOptionPane.ERROR_MESSAGE);
+        } catch (Exception e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "姓名为空！", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+        return null;
+    }
+
+    //查询所有用户信息
+    public String[] searchPersonalInfoAll() {
+        try {
+
+            this.connectDatabase();
+            Statement statement = this.connection.createStatement();
+            String sql = "SELECT * FROM personalInfo;";
+            ResultSet resultSet = statement.executeQuery(sql);
+            resultSet.last();
+            String[] result = new String[resultSet.getRow() * 18];
+            resultSet.beforeFirst();
+            for(int i = 0; resultSet.next(); i++) {
+                result[i*18 + 0] = resultSet.getString("name");
+                result[i*18 + 1] = resultSet.getString("censusID");
+                result[i*18 + 2] = resultSet.getString("hostOrRelation");
+                result[i*18 + 3] = resultSet.getString("formerName");
+                result[i*18 + 4] = resultSet.getString("gender");
+                result[i*18 + 5] = resultSet.getString("birthplace");
+                result[i*18 + 6] = resultSet.getString("nationality");
+                result[i*18 + 7] = resultSet.getString("birthday");
+                result[i*18 + 8] = resultSet.getString("address");
+                result[i*18 + 9] = resultSet.getString("religion");
+                result[i*18 + 10] = resultSet.getString("IDNumber");
+                result[i*18 + 11] = resultSet.getString("height");
+                result[i*18 + 12] = resultSet.getString("bloodType");
+                result[i*18 + 13] = resultSet.getString("educationLevel");
+                result[i*18 + 14] = resultSet.getString("marriageStatus");
+                result[i*18 + 15] = resultSet.getString("militaryStatus");
+                result[i*18 + 16] = resultSet.getString("occupation");
+                result[i*18 + 17] = resultSet.getString("ImmigrationEmigration");
+            }
+            statement.close();
+            resultSet.close();
+            this.disconnectDatabase();
+            System.out.println("Search all personal information finished.");
+            return result;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "查询失败！", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+        return null;
+    }
+
     //查询帐号信息
     public String[] searchAccount(String userName) {
         try {
-            if(userName.equals("")) {
+            if (userName.equals("")) {
                 throw new Exception("User name does not exist.");
             }
             this.connectDatabase();
@@ -562,21 +677,19 @@ public class DBOperations {
             String sql = "SELECT * FROM userAccount WHERE userName = '" + userName + "';";
             String[] result = new String[4];
             ResultSet resultSet = statement.executeQuery(sql);
-            while(resultSet.next()) {
+            while (resultSet.next()) {
                 result[0] = resultSet.getString("userName");
                 result[1] = resultSet.getString("userPassword");
                 result[2] = resultSet.getString("userPower");
                 result[3] = resultSet.getString("IDNumber");
             }
-            if(result[0].equals("")) {
+            if (result[0].equals("")) {
                 throw new Exception("User name does not exist.");
             }
             statement.close();
             resultSet.close();
             this.disconnectDatabase();
             System.out.println("Account deleted.");
-            JOptionPane.showMessageDialog(null, "查询帐号成功！", "Success", JOptionPane.INFORMATION_MESSAGE);
-
             return result;
         } catch (SQLException e) {
             e.printStackTrace();
@@ -592,7 +705,7 @@ public class DBOperations {
     //根据用户名查询户籍
     public String[] searchCensusByUserName(String userName) {
         try {
-            if(userName.equals("")) {
+            if (userName.equals("")) {
                 throw new Exception("User name does not exist.");
             }
             this.connectDatabase();
@@ -600,19 +713,19 @@ public class DBOperations {
             Statement statement = this.connection.createStatement();
             ResultSet resultSetIDNumber = statement.executeQuery(sqlSearchIDNumberByUserName);
             String IDNumber = null;
-            while(resultSetIDNumber.next()) {
+            while (resultSetIDNumber.next()) {
                 IDNumber = resultSetIDNumber.getString("IDNumber");
             }
             String sqlSearchCensusIDByIDNumber = "SELECT censusID FROM personalInfo WHERE IDNumber = '" + IDNumber + "';";
             ResultSet resultSetCensusID = statement.executeQuery(sqlSearchCensusIDByIDNumber);
             String censusID = null;
-            while(resultSetCensusID.next()) {
+            while (resultSetCensusID.next()) {
                 censusID = resultSetCensusID.getString("censusID");
             }
             String[] result = new String[5];
             String sqlSearchCensus = "SELECT * FROM census WHERE censusID = '" + censusID + "';";
             ResultSet resultSetCensus = statement.executeQuery(sqlSearchCensus);
-            while(resultSetCensus.next()) {
+            while (resultSetCensus.next()) {
                 result[0] = resultSetCensus.getString("censusID");
                 result[1] = resultSetCensus.getString("censusHost");
                 result[2] = resultSetCensus.getString("censusType");
@@ -622,7 +735,7 @@ public class DBOperations {
             }
             String sqlHostOrRelation = "SELECT hostOrRelation FROM personalInfo WHERE IDNumber = '" + IDNumber + "';";
             ResultSet resultSetHostOrRelation = statement.executeQuery(sqlHostOrRelation);
-            while(resultSetHostOrRelation.next()) {
+            while (resultSetHostOrRelation.next()) {
                 result[3] = resultSetHostOrRelation.getString(1);
             }
             statement.close();
@@ -646,14 +759,14 @@ public class DBOperations {
     //更新户籍信息
     public void updateCensus(String censusID, String censusColumn, String censusInfo) {
         try {
-            if(censusID.equals("")) {
+            if (censusID.equals("")) {
                 throw new Exception("censusID does not exist.");
             }
             this.connectDatabase();
             Statement statement = this.connection.createStatement();
             String sqlSearch = "SELECT * FROM census WHERE censusID = '" + censusID + "';";
             ResultSet resultSet = statement.executeQuery(sqlSearch);
-            if(!resultSet.absolute(1)) {
+            if (!resultSet.absolute(1)) {
                 throw new Exception("CensusID does not exist.");
             }
             String sql = "UPDATE census SET " + censusColumn + " = '" + censusInfo + "' WHERE censusID = '" + censusID + "';";
@@ -674,14 +787,14 @@ public class DBOperations {
     //更新个人信息
     public void updatePersonalInfo(String IDNumber, String personalInfoColumn, String information) {
         try {
-            if(IDNumber.equals("")) {
+            if (IDNumber.equals("")) {
                 throw new Exception("IDNumber does not exists.");
             }
             this.connectDatabase();
             Statement statement = this.connection.createStatement();
             String sqlSearch = "SELECT * FROM personalInfo WHERE IDNumber = '" + IDNumber + "';";
             ResultSet resultSet = statement.executeQuery(sqlSearch);
-            if(!resultSet.absolute(1)) {
+            if (!resultSet.absolute(1)) {
                 throw new Exception("IDNumber does not exists.");
             }
             String sql = "UPDATE personalInfo SET " + personalInfoColumn + " = '" + information + "' WHERE IDNumber = '" + IDNumber + "';";
@@ -708,10 +821,10 @@ public class DBOperations {
             String sqlUpdatePassword = "UPDATE userAccount SET userPassword = '" + newPassword + "' WHERE userName = '" + userName + "';";
             ResultSet resultSet = statement.executeQuery(sqlGetOldPassword);
             String passwordFromDB = null;
-            while(resultSet.next()) {
+            while (resultSet.next()) {
                 passwordFromDB = resultSet.getString("userPassword");
             }
-            if(oldPassword.equals(passwordFromDB)) {
+            if (oldPassword.equals(passwordFromDB)) {
                 statement.execute(sqlUpdatePassword);
             } else {
                 throw new Exception();
